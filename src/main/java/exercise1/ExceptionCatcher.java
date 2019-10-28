@@ -7,7 +7,7 @@ public class ExceptionCatcher {
 		this.exceptionThrower = exceptionThrower;
 	}
 
-	void executeExceptionThrowerSafely(int value) {
+	void executeExceptionThrowerSafely(int value) throws Exception {
 		exceptionThrower.throwACustomExceptionWhenValueIs42(value);
 	}
 }
